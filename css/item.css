@@ -1,0 +1,299 @@
+﻿/*************** NAVBAR ***************/
+
+@font-face {
+    font-family: wardrobeFont;
+    src: url("../fonts/comunica_type.ttf");
+}
+
+body {
+    background-color: #FAFAFA;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid rgba(0, 0, 0, .0975);
+    /* top: 0; */
+    height: 77px;
+}
+
+.nav-icon {
+    color: black;
+}
+
+.nav-icon:hover {
+    transform: scale(1.2);
+}
+
+.navbar-brand {
+    font-family: wardrobeFont, cursive;
+    color: black;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.navbar-brand:hover {
+    color: black;
+}
+
+#sideBar-tbtn{
+    display: none;
+}
+
+/* responsive navbar */
+@media only screen and (max-width: 860px) {
+    .md-below-hidden {
+        display: none;
+    }
+    #sideBar-tbtn{
+        display: block;
+    }
+
+    .navbar-brand {
+        font-size: large;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar-brand {
+        font-size: small;
+    }
+}
+/********************************************/
+
+
+
+/************* SIDE BAR ********************/
+.sidebar {
+    display: none;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 5000;
+    top: 0;
+    left: 0;
+    background-color: #f7e3de;
+    padding-top: 80px;
+    border-right: 1px solid rgba(0, 0, 0, .1);
+}
+
+.sidebar ul li{
+    padding: 5px 20px 20px 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+.sidebar ul li:first-child, .sidebar ul li:last-child{
+    border-bottom: none;
+}
+.sidebar ul li:nth-child(1){
+    margin-top: -30px;
+}
+
+.sidebar a{
+    color: black;
+}
+
+.nav-close-btn{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    margin-left: 50px;
+}
+
+.sidebar ul li .active{
+    color: blue;
+    font-weight: bold;
+}
+
+.sidebar ul li:hover{
+    font-weight: bold;
+}
+/********************************************/
+/************* FOOTER ****************/
+.footer {
+    background-color: #FEF1EE;
+    font-size: large;
+}
+
+.footer h4 {
+    font-family: logoFont, cursive;
+}
+
+.footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer a:hover {
+    font-weight: bolder;
+}
+
+.rb-show {
+    margin-top: 10px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.mt-10px {
+    margin-top: 10px;
+}
+
+.footer-end {
+    background-color: #f7e3de;
+}
+
+.footer-end a {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+}
+
+/************************************************/
+/***************************************************/
+p, span {
+    color: #7c7c7c;
+}
+a{
+    color:black;
+}
+ a:hover {
+    color:#b4975a;
+    text-decoration:none;
+}
+ h1{
+     font-size:2.5vw;
+ }
+::selection {
+    background: #b4975a;
+    color: #ffffff;
+}
+
+.img{
+    padding-left: 2em;
+    padding-top: 30px;
+    overflow:hidden;
+    height: 90%;
+    width: 90%;
+}
+.img img {
+    transition: transform 1s ease-in-out;
+}
+.img:hover img{
+    transform:scale(1.05);
+}
+
+.sticky{
+    height: 550px;
+}
+input[type=number] {
+    width: 35%;
+    height:50px;
+    padding-left:5%;
+    padding-right:5%;
+}
+form {
+    display: inline-block;
+}
+.sticky .btn{
+    display:inline;
+    background-color:black;
+    color:white;
+
+}
+.sticky .btn:hover {
+    background-color: #b4975a;
+}
+.hidden{
+    display:none;
+}
+
+
+.content {
+    overflow: hidden;
+    position: relative;
+}
+
+.card-img-top {
+    height:432px;
+    transition: transform 1s;
+}
+
+.content:hover > .card-img-top {
+    transform: scale(1.1);
+}
+
+.content:hover > .background {
+    z-index: +1;
+}
+
+.content:hover > .btn {
+    display: block;
+}
+
+.content > .background {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    background-color: black;
+    z-index: -1;
+    opacity: 0.1;
+}
+
+.content > .btn {
+    position: absolute;
+    top: 93%;
+    left: 10%;
+    width: 80%;
+    display: none;
+    transition: transform 1s;
+}
+
+.card{
+    height:458px;
+}
+
+@media only screen and (max-width: 768px)
+{
+    .sticky{
+        display:none;
+    }
+    .hidden{
+        display:block;
+    }
+    .card{
+        margin-top:10px;
+    }
+}
+
+.carousel-indicators{
+    position:absolute;
+    top: 100%;
+}
+
+.carousel-indicators li {
+    width: 18px;
+    height: 18px;
+    margin: 10px;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color: #636363;
+    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);
+}
+
+.carousel-indicators .active{
+    width: 18px;
+    height: 18px;
+    margin: 10px;
+    background-color: #000000;
+  }
+h3{
+    text-align:center;
+}
+.progress {
+    z-index: 4000;
+    width: 100%;
+}

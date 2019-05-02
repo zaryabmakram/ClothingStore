@@ -1,0 +1,450 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Project">
+    <meta name="author" content="Anas Tahir">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="bootstrap-4.0.0-dist/css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <link href="css/item.css" rel="stylesheet" />
+
+    <!-- Side Bar Script -->
+    <script>
+        function navOpen() {
+            document.getElementById("sideNav").style.display = "block";
+        }
+
+        function navClose() {
+            document.getElementById("sideNav").style.display = "none";
+        }
+    </script>
+
+    <!-- Carousel Script -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+    <title>Wardrobe | Item</title>
+
+</head>
+
+<body>
+    <!-- Scroll Bar -->
+    <div id="myBar" class="progress fixed-top" style="height:5px">
+        <div class="progress-bar bg-info" style="width:0%;"></div>
+    </div>
+
+    <!-- SIDE BAR -->
+    <div id="sideNav" class="sidebar navbar-dark bg-black">
+        <ul class="nav flex-column nav-justified">
+            <li class="nav-item">
+                <button class="btn btn-outline-dark btn-sm mt-1 nav-close-btn" onclick="navClose()">
+                    <i class="fa fa-times"></i>
+                </button>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="signin.html"><i class="fa fa-user-plus fa-lg mr-2"></i>Sign In</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link " href="index.html"><i class="fa fa-home fa-lg mr-2"></i>Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="collection.html" class="nav-link"><i
+                        class="fa fa-th-large fa-lg mr-2"></i>Collection</a>
+            </li>
+            <li class="nav-item">
+                <a href="profile.html" class="nav-link  active"><i class="fa fa-user fa-lg mr-2"></i>Account</a>
+            </li>
+            <li class="nav-item">
+                <a href="cart.html" class="nav-link"><i class="fa fa-shopping-cart fa-lg mr-2"></i>Cart</a>
+            </li>
+            <li class="nav-item">
+                <a href="checkout.html" class="nav-link"><i class="fa fa-money fa-lg mr-2"></i>Check Out</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <button id="sideBar-tbtn" class="btn btn-outline-dark mr-2" onclick="navOpen()" data-toggle="tooltip"
+            data-placement="bottom" title="Side Menu">
+            <i class="fa fa-bars fa-lg"></i>
+        </button>
+
+        <a class="navbar-brand text-uppercase" href="index.html">Wardrobe</a>
+
+        <form class="mx-auto my-auto d-flex w-50" action="collection.html">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search">
+                <span class="input-group-btn">
+                    <button class="btn btn-outline-dark" type="submit"><i class="fa fa-search"></i></button>
+                </span>
+            </div>
+        </form>
+
+        <ul class="nav ml-auto nav-flex-icons md-below-hidden">
+            <li class="nav-item">
+                <a class="nav-link waves-effect waves-light" href="collection.html" data-toggle="tooltip"
+                    data-placement="bottom" title="Favorites">
+                    <i class="fa fa-heart nav-icon fa-lg"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="cart.html" data-toggle="tooltip" data-placement="bottom" title="Your Cart">
+                    <i class="fa fa-shopping-cart nav-icon fa-lg"></i>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="profile.html" data-toggle="tooltip" data-placement="bottom" title="Profile">
+                    <i class="fa fa-user nav-icon fa-lg"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-7 col-sm-10">
+                <div class="img">
+                    <img class="img-fluid"
+                        src="https://undsgn.com/uncode/wp-content/uploads/2015/05/product-man-5a.jpg" />
+                </div>
+            </div>
+
+            <div class="col-md-4 sticky-top sticky">
+                <h1>BLUE &amp; WHITE T-SHIRT</h1>
+                <span>4.5/5</span>
+                <a href="">(2 customers reviews)</a>
+                <h1>€85.50</h1>
+                <p class="justify-content-end">
+                    Short sleeve t-shirts in black, crewneck collar.
+                    Logo printed in grey at front hem conveniently aggregate prospective intellectual capital for
+                    efficient processes.
+                    Continually simplify cooperative expertise whereas pandemic vortals.
+                    Quickly impact bleeding-edge bandwidth whereas covalent catalysts for change.
+                    Tonal stitching. 98% cotton, 2% elastane. Made in Italy.
+                </p>
+                <form action="">
+                    <input type="number" min="1" step="1" value="1" />
+                </form>
+                <a type="button" class="btn" href="cart.html">ADD TO CART</a>
+                <hr />
+                <p><span class="h4">SKU</span><a href="" style="float:right">03689</a></p>
+                <p><span class="h4">Categories</span><a href="" style="float:right">Men&nbsp;</a><a href=""
+                        style="float:right">Clothing,</a></p>
+                <p><span class="h4">Tags</span><a href="" style="float:right">Shirt</a></p>
+            </div>
+
+            <div class="col-md-7 col-sm-10">
+                <div class="img">
+                    <img class="img-fluid"
+                        src="https://d3f86pfw66amx.cloudfront.net/uncode/wp-content/uploads/2017/02/product-man-5b.jpg" />
+                </div>
+            </div>
+
+            <div class="col-md-7 col-sm-10">
+                <div class="img">
+                    <img class="img-fluid"
+                        src="https://undsgn.com/uncode/wp-content/uploads/2017/02/product-man-5c.jpg" />
+                </div>
+            </div>
+
+            <div class="col-md-7 col-sm-10">
+                <div class="img">
+                    <img class="img-fluid"
+                        src="https://d3f86pfw66amx.cloudfront.net/uncode/wp-content/uploads/2017/02/product-man-5d.jpg" />
+                </div>
+            </div>
+
+            <div class="col-md-4 hidden">
+                <h1>BLUE &amp; WHITE T-SHIRT</h1>
+                <span>4.5/5</span>
+                <a href="">(2 customers reviews)</a>
+                <h1>€85.50</h1>
+                <p class="justify-content-end">
+                    Short sleeve t-shirts in black, crewneck collar.
+                    Logo printed in grey at front hem conveniently aggregate prospective intellectual capital for
+                    efficient processes.
+                    Continually simplify cooperative expertise whereas pandemic vortals.
+                    Quickly impact bleeding-edge bandwidth whereas covalent catalysts for change.
+                    Tonal stitching. 98% cotton, 2% elastane. Made in Italy.
+                </p>
+                <form action="">
+                    <input type="number" min="1" step="1" value="1" />
+                </form>
+                <button type="button" class="btn">ADD TO CART</button>
+                <hr />
+                <p><span class="h4">SKU</span><a href="" style="float:right">03689</a></p>
+                <p><span class="h4">Categories</span><a href="" style="float:right">Men&nbsp;</a><a href=""
+                        style="float:right">Clothing,</a></p>
+                <p><span class="h4">Tags</span><a href="" style="float:right">Shirt</a></p>
+            </div>
+
+        </div>
+        <hr />
+
+        <div class="row related-product">
+            <div class="col-md-12">
+                <h3>RELATED PRODUCTS</h3>
+            </div>
+
+
+            <div class="col-sm-12 ">
+                <div class="carousel slide" id="img-carousel" data-ride="carousel" data-interval="5000">
+
+                    <ol class="carousel-indicators">
+                        <li data-target="#img-carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#img-carousel" data-slide-to="1"></li>
+                        <li data-target="#img-carousel" data-slide-to="2"></li>
+                    </ol>
+
+                    <div class="carousel-inner">
+
+                        <div class="carousel-item active">
+                            <div class="row">
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="content">
+                                            <img class="card-img-top"
+                                                src="https://d3f86pfw66amx.cloudfront.net/uncode/wp-content/uploads/2017/03/custom-demo-image-8418410427_2_1_1-uai-1920x1920.jpg">
+                                            <button type="button" class="btn btn-sm btn-dark">ADD TO CART</button>
+                                            <div class="background"></div>
+                                        </div>
+                                        <p class="card-text"><a href=""><span>DENIM JACKET - €135.00</span></a></p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="content">
+                                            <img class="card-img-top"
+                                                src="https://d3f86pfw66amx.cloudfront.net/uncode/wp-content/uploads/2017/03/custom-demo-image-0706207800_2_2_1-min-uai-1784x2379.jpg">
+                                            <button type="button" class="btn btn-sm btn-dark">ADD TO CART</button>
+                                            <div class="background"></div>
+                                        </div>
+                                        <p class="card-text"><a href=""><span>CAMOUFLAGE TOP - €110.00</span></a></p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="content">
+                                            <img class="card-img-top"
+                                                src="https://d3f86pfw66amx.cloudfront.net/uncode/wp-content/uploads/2017/03/custom-demo-image-6719462505_2_1_1-uai-1920x1920.jpg">
+                                            <button type="button" class="btn btn-sm btn-dark">ADD TO CART</button>
+                                            <div class="background"></div>
+                                        </div>
+                                        <p class="card-text"><a href=""><span>DENIM JACKET - €135.00</span></a></p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="content">
+                                            <img class="card-img-top"
+                                                src="https://d3f86pfw66amx.cloudfront.net/uncode/wp-content/uploads/2015/05/product-man-3a-uai-828x1104.jpg">
+                                            <button type="button" class="btn btn-sm btn-dark">ADD TO CART</button>
+                                            <div class="background"></div>
+                                        </div>
+                                        <p class="card-text"><a href=""><span>DENIM JACKET - €135.00</span></a></p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="content">
+                                            <img class="card-img-top"
+                                                src="https://d3f86pfw66amx.cloudfront.net/uncode/wp-content/uploads/2017/03/custom-demo-image-8418410427_2_1_1-uai-1920x1920.jpg">
+                                            <button type="button" class="btn btn-sm btn-dark">ADD TO CART</button>
+                                            <div class="background"></div>
+                                        </div>
+                                        <p class="card-text"><a href=""><span>DENIM JACKET - €135.00</span></a></p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="content">
+                                            <img class="card-img-top"
+                                                src="https://d3f86pfw66amx.cloudfront.net/uncode/wp-content/uploads/2017/03/custom-demo-image-0706207800_2_2_1-min-uai-1784x2379.jpg">
+                                            <button type="button" class="btn btn-sm btn-dark">ADD TO CART</button>
+                                            <div class="background"></div>
+                                        </div>
+                                        <p class="card-text"><a href=""><span>CAMOUFLAGE TOP - €110.00</span></a></p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="content">
+                                            <img class="card-img-top"
+                                                src="https://d3f86pfw66amx.cloudfront.net/uncode/wp-content/uploads/2017/03/custom-demo-image-6719462505_2_1_1-uai-1920x1920.jpg">
+                                            <button type="button" class="btn btn-sm btn-dark">ADD TO CART</button>
+                                            <div class="background"></div>
+                                        </div>
+                                        <p class="card-text"><a href=""><span>DENIM JACKET - €135.00</span></a></p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="content">
+                                            <img class="card-img-top"
+                                                src="https://d3f86pfw66amx.cloudfront.net/uncode/wp-content/uploads/2015/05/product-man-3a-uai-828x1104.jpg">
+                                            <button type="button" class="btn btn-sm btn-dark">ADD TO CART</button>
+                                            <div class="background"></div>
+                                        </div>
+                                        <p class="card-text"><a href=""><span>DENIM JACKET - €135.00</span></a></p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="carousel-item">
+                            <div class="row">
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="content">
+                                            <img class="card-img-top"
+                                                src="https://d3f86pfw66amx.cloudfront.net/uncode/wp-content/uploads/2017/03/custom-demo-image-8418410427_2_1_1-uai-1920x1920.jpg">
+                                            <button type="button" class="btn btn-sm btn-dark">ADD TO CART</button>
+                                            <div class="background"></div>
+                                        </div>
+                                        <p class="card-text"><a href=""><span>DENIM JACKET - €135.00</span></a></p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="content">
+                                            <img class="card-img-top"
+                                                src="https://d3f86pfw66amx.cloudfront.net/uncode/wp-content/uploads/2017/03/custom-demo-image-0706207800_2_2_1-min-uai-1784x2379.jpg">
+                                            <button type="button" class="btn btn-sm btn-dark">ADD TO CART</button>
+                                            <div class="background"></div>
+                                        </div>
+                                        <p class="card-text"><a href=""><span>CAMOUFLAGE TOP - €110.00</span></a></p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="content">
+                                            <img class="card-img-top"
+                                                src="https://d3f86pfw66amx.cloudfront.net/uncode/wp-content/uploads/2017/03/custom-demo-image-6719462505_2_1_1-uai-1920x1920.jpg">
+                                            <button type="button" class="btn btn-sm btn-dark">ADD TO CART</button>
+                                            <div class="background"></div>
+                                        </div>
+                                        <p class="card-text"><a href=""><span>DENIM JACKET - €135.00</span></a></p>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3 col-sm-6">
+                                    <div class="card">
+                                        <div class="content">
+                                            <img class="card-img-top"
+                                                src="https://d3f86pfw66amx.cloudfront.net/uncode/wp-content/uploads/2015/05/product-man-3a-uai-828x1104.jpg">
+                                            <button type="button" class="btn btn-sm btn-dark">ADD TO CART</button>
+                                            <div class="background"></div>
+                                        </div>
+                                        <p class="card-text"><a href=""><span>DENIM JACKET - €135.00</span></a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="container-fluid text-center footer px-0">
+        <div class="row m-0">
+            <div class="col-md-4 mx-auto rb-show">
+                <h4 class="text-lowercase mt-3 mb-4">Call or Text</h4>
+                <i class="fa fa-phone fa-lg mr-2"></i>
+                <a href="tel:090078601">0900-78601</a>
+
+            </div>
+            <hr class="w-100 d-md-none">
+            <div class="col-md-4 mx-auto rb-show">
+                <h4 class="text-lowercase mt-3 mb-4 mt-10px">Site Info</h4>
+                <ul class="list-unstyled">
+                    <li><a href="#">My Account</a></li>
+                    <li><a href="#">What do we have?</a></li>
+                    <li><a href="#">What's my Order?</a></li>
+                </ul>
+            </div>
+            <hr class="w-100 d-md-none">
+            <div class="col-md-4 mx-auto">
+                <h4 class="text-lowercase mt-3 mb-4">Connect With Us</h4>
+                <ul class="list-unstyled">
+                    <li><a href="https://www.facebook.com/"><i class="fa fa-facebook-square fa-lg mr-2"></i>Facebook</a>
+                    </li>
+                    <li><a href="https://twitter.com/"><i class="fa fa-twitter-square fa-lg mr-2"></i>Twitter
+                            &nbsp;&nbsp;&nbsp;</a></li>
+                    <li><a href="https://www.pinterest.com/"><i
+                                class="fa fa-pinterest-square fa-lg mr-2"></i>Pinterest&nbsp;</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <ul class="list-unstyled list-inline text-center py-2">
+            <li class="list-inline-item">
+                <h4 class="mb-3">Sign up for weekly promotions!</h4>
+            </li>
+            <li class="list-inline-item">
+                <form class="mx-auto my-auto d-flex">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Email">
+                        <span class="input-group-btn ml-1">
+                            <button class="btn btn-outline-dark" type="button">Go!</button>
+                        </span>
+                    </div>
+                </form>
+            </li>
+        </ul>
+        <hr class="mb-0">
+        <div class="text-center footer-end py-2 w-100 mx-0">&copy; 2019 Copyright:
+            <a class="ml-2" href="index.html"> wardrobe.com</a>
+        </div>
+    </div>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
+
+    <!-- Scroll Bar -->
+    <script>
+        // When the user scrolls the page, execute myFunction 
+        window.onscroll = function () { scrollFunc() };
+
+        function scrollFunc() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("myBar").style.backgroundColor = "pink";
+            document.getElementById("myBar").style.width = scrolled + "%";
+        }
+    </script>
+</body>
+
+</html>

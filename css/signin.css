@@ -1,0 +1,47 @@
+@font-face {
+    font-family: 'wardrobeFont';
+    src: url("../fonts/comunica_type.ttf");
+}
+a{
+    color: black;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.wardrobe-form {
+    width: 100%;
+    max-width: 430px;
+    padding: 15px;
+    margin: 0 auto;
+    position: relative;
+    top: 30px;
+}
+
+.site-logo {
+    font-family: 'wardrobeFont', cursive;
+    color: black;
+    font-size: 45px;
+    padding: 5px;
+    background-color: #FEF1EE;
+    border-radius: 5px;
+}
+
+.divider-line {
+    width: 45%;
+}
+
+.btn-facebook {
+    background-color: #405D9D;
+    color: #fff;
+}
+
+.btn-facebook:hover {
+    background-color: #1B4F72;
+}
+
+.progress {
+    z-index: 4000;
+    width: 100%;
+}

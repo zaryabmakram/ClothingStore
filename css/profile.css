@@ -1,0 +1,253 @@
+/*************** NAVBAR ***************/
+
+@font-face {
+    font-family: wardrobeFont;
+    src: url("../fonts/comunica_type.ttf");
+}
+
+body {
+    background-color: #FAFAFA;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: #FFFFFF;
+    border-bottom: 1px solid rgba(0, 0, 0, .0975);
+    /* top: 0; */
+    height: 77px;
+}
+
+.nav-icon {
+    color: black;
+}
+
+.nav-icon:hover {
+    transform: scale(1.2);
+}
+
+.navbar-brand {
+    font-family: wardrobeFont, cursive;
+    color: black;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.navbar-brand:hover {
+    color: black;
+}
+
+#sideBar-tbtn{
+    display: none;
+}
+
+/* responsive navbar */
+@media only screen and (max-width: 860px) {
+    .md-below-hidden {
+        display: none;
+    }
+    #sideBar-tbtn{
+        display: block;
+    }
+
+    .navbar-brand {
+        font-size: large;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar-brand {
+        font-size: small;
+    }
+}
+/********************************************/
+
+
+
+/************* SIDE BAR ********************/
+.sidebar {
+    display: none;
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 5000;
+    top: 0;
+    left: 0;
+    background-color: #f7e3de;
+    padding-top: 80px;
+    border-right: 1px solid rgba(0, 0, 0, .1);
+}
+
+.sidebar ul li{
+    padding: 5px 20px 20px 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+}
+.sidebar ul li:first-child, .sidebar ul li:last-child{
+    border-bottom: none;
+}
+.sidebar ul li:nth-child(1){
+    margin-top: -30px;
+}
+
+.sidebar a{
+    color: black;
+}
+
+.nav-close-btn{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    margin-left: 50px;
+}
+
+.sidebar ul li .active{
+    color: blue;
+    font-weight: bold;
+}
+
+.sidebar ul li:hover{
+    font-weight: bold;
+}
+/********************************************/
+/************* FOOTER ****************/
+.footer {
+    background-color: #FEF1EE;
+    font-size: large;
+}
+
+.footer h4 {
+    font-family: logoFont, cursive;
+}
+
+.footer a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer a:hover {
+    font-weight: bolder;
+}
+
+.rb-show {
+    margin-top: 10px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.mt-10px {
+    margin-top: 10px;
+}
+
+.footer-end {
+    background-color: #f7e3de;
+}
+
+.footer-end a {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 500;
+}
+
+/************************************************/
+/***************************************************/
+.container {
+    margin-top: 20px;
+}
+
+.user-picture {
+    position: relative;
+    width:100px;
+}
+
+.user-picture img {
+    border-radius: 50%;
+}
+
+.account-info {
+    height: 80px;
+}
+
+.user-info li {
+    display: inline-block;
+    font-size: medium;
+    line-height: 1.5;
+    margin-right: 38px;
+    cursor: pointer;
+}
+
+.user-info li .info-count {
+    font-weight: bold;
+}
+
+/* Card View CSS */
+.card-deck {
+    margin: 20px;
+    justify-content: space-between;
+}
+
+.card-deck .card {
+    width: 18rem;
+    border-radius: 0;
+    margin: 0 0 16px;
+}
+
+.card-img-top {
+    width: 100%;
+    height: auto;
+}
+
+.card-like {
+    color: red;
+    position: absolute;
+    left: 85%;
+}
+
+.card-like:hover {
+    color: darkred;
+}
+
+.card-text {
+    color: #474747;
+    font-weight: 300;
+    font-size: .85rem;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon{
+    filter: invert(100%);
+}
+
+/* rounding carousal indicators */
+.carousel-indicators li {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    filter: invert(100%);
+}
+
+/* responsive card-deck */
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .card-deck .card {
+        flex: 0 0 48.7%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .card-deck .card {
+        flex: 0 0 32%;
+    }
+}
+
+@media (min-width: 992px) {
+    .user-picture {
+        top: 50px;
+        left: 90px;
+    }
+    .card-deck .card {
+        flex: 0 0 24%;
+    }
+}
+
+.progress {
+    z-index: 4000;
+    width: 100%;
+}
